@@ -1,18 +1,7 @@
 defmodule FaultTolerance do
-  @moduledoc """
-  Documentation for `FaultTolerance`.
-  """
+  use Application
 
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> FaultTolerance.hello()
-      :world
-
-  """
-  def hello do
-    :world
+  def start(_type, _args) do
+    FaultTolerance.Supervisor.start_link()
   end
 end
