@@ -1,14 +1,8 @@
 # FaultTolerance
 
-**TODO: Add description**
+- This is a package delivery system using the OTP concept like Supervisor, GenServer, and Process. Basic purpose of this application is to make system fault tolerance and efficient
 
-## Installation
+## Testing Through Terminal
 
-
-```
-
-```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). 
-
+- packages = FaultTolerance.Package.random_batch(10)
+- FaultTolerance.Receiver.receive_packages(packages)
